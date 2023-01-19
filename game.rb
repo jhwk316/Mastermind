@@ -64,7 +64,14 @@ class Mastermind
     end
   end #END GUESS_THE_CODE
 
-
+  def new_game
+    guess_the_code until correct_guesses == code || attempts == 7 
+       puts
+       puts "SORRY! YOU LOSE! THE SECRET CODE WAS #{code}" if @attempts == 7
+       puts
+       puts "CONGRATULATIONS!!  YOU WIN" if correct_guesses == code
+       puts
+end #END NEW_GAME
 
 
 
