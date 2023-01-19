@@ -14,6 +14,7 @@ class Mastermind
   attr_reader :valid_guess, :save_response
 
   def initialize
+    title
     intro
     @colors = %w[Red Orange Yellow Green Blue Purple White Black]
     @attempts = 0

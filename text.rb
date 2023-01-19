@@ -32,6 +32,9 @@ module Heading
     puts
     puts '**Colors may appear more than once'
     puts
+    puts "----------Type 'SAVE' to save your game at anytime------------"
+    puts 
+    puts
   end
 end
 
@@ -49,6 +52,9 @@ module Output
   end
 
   def wrong_code
+    puts
+    puts "----------Type 'SAVE' to save your game at anytime------------"
+    puts 
     puts "You have #{7 - @attempts} attempts remaining"
     puts "Colors guessed so far: #{@all_guesses.flatten.uniq}"
     puts
