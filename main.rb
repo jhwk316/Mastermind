@@ -1,5 +1,8 @@
-require_relative 'display_copy'
-require_relative 'game_copy'
+require 'yaml'
+
+
+require_relative 'game'
+require_relative 'text'
 
 game = Mastermind.new
-game.new_game
+game.load_game

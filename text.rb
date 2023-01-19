@@ -1,5 +1,5 @@
+require 'yaml'
 
-require_relative 'game'
 
 module Heading
   def intro
@@ -16,6 +16,18 @@ module Heading
     puts
     puts "**Colors may appear more than once"
     puts
+    puts
+  end
+end
+
+module Output
+  def color_choices
+    puts  "Choose 4 of the following: Red, Orange, Yellow, Green, Blue, Purple, White, Black"
+  end
+  def invalid_choice
+    puts
+    puts "YOU DID NOT ENTER VALID CHOICES"
+    puts "PLEASE TRY AGAIN"
     puts
   end
 end
